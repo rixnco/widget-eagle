@@ -7635,23 +7635,23 @@ onAddGcode : function(addGcodeCallback, gcodeParts, eagleWidget, helpDesc){
         },
         isVidLoaded: false,
         lazyLoadTutorial: function () {
-            // lazy load tutorial tab youtube vid
-            //var isVidLoaded = false;
-            var that = this;
-            $('#' + this.id + ' a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                //e.target // activated tab
-                console.log("tab activated. e.target:", $(e.target));
-                if ($(e.target).text() == 'Tutorial') {
-                    // lazy load
-                    console.log("we are on tutorial tab");
-                    if (!that.isVidLoaded) {
-                        console.log("lazy loading vid cuz not loaded");
-                        that.isVidLoaded = true;
-                        $('#eagle-tutorial').html('<iframe style="width:100%;" class="" src="//www.youtube.com/embed/DX0xGgSARj4" frameborder="0" allowfullscreen></iframe>');
-                    }
-                }
-                //e.relatedTarget // previous tab
-            })
+            // // lazy load tutorial tab youtube vid
+            // //var isVidLoaded = false;
+            // var that = this;
+            // $('#' + this.id + ' a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            //     //e.target // activated tab
+            //     console.log("tab activated. e.target:", $(e.target));
+            //     if ($(e.target).text() == 'Tutorial') {
+            //         // lazy load
+            //         console.log("we are on tutorial tab");
+            //         if (!that.isVidLoaded) {
+            //             console.log("lazy loading vid cuz not loaded");
+            //             that.isVidLoaded = true;
+            //             $('#eagle-tutorial').html('<iframe style="width:100%;" class="" src="//www.youtube.com/embed/DX0xGgSARj4" frameborder="0" allowfullscreen></iframe>');
+            //         }
+            //     }
+            //     //e.relatedTarget // previous tab
+            // })
 
         },
         options: null,
